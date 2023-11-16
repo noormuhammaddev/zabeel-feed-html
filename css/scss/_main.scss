@@ -337,12 +337,12 @@ section {
   gap: 7px;
   align-items: center;
 
-  a{
+  a {
     color: $default_light;
     font-weight: 300;
   }
-  
-  span{
+
+  span {
     color: $green;
   }
 }
@@ -503,12 +503,12 @@ section {
   }
 }
 
-.team-person{
+.team-person {
   display: flex;
   gap: 70px;
   margin-bottom: 95px;
 
-  .profile-image{
+  .profile-image {
     width: 502px;
     height: 510px;
     border-radius: 25px;
@@ -520,48 +520,47 @@ section {
     }
   }
 
-  .profile-detail{
+  .profile-detail {
     flex: 1;
-    h3{
+    h3 {
       font-size: 36px;
       margin-bottom: 12px;
     }
-    .designation{
+    .designation {
       margin-bottom: 30px;
       font-size: 22px;
       color: $default_light;
     }
-    > p{
+    > p {
       font-size: 20px;
       color: $default_light;
       margin-top: 20px;
     }
-    .icon{
+    .icon {
       display: flex;
       gap: 12px;
       align-items: center;
       margin-bottom: 16px;
 
-      span{
+      span {
         height: 40px;
         width: 40px;
         background: $black;
         border-radius: 50%;
       }
-      p{
+      p {
         font-size: 18px;
         color: $default_light;
       }
-      
     }
   }
 }
 
-.card{
+.card {
   border-radius: 25px;
   padding: 37px 30px;
 
-  .image-holder{
+  .image-holder {
     width: 160px;
     height: 157px;
     background: red;
@@ -573,46 +572,45 @@ section {
       min-height: 100%;
     }
   }
-  
-  .card-detail{
+
+  .card-detail {
     flex: 1;
-    h3{
+    h3 {
       font-size: 36px;
       margin: 26px 0 5px 0;
     }
-    .designation{
+    .designation {
       margin-bottom: 20px;
       font-size: 22px;
       color: $default_light;
     }
-    > p{
+    > p {
       font-size: 20px;
-      color: $default_light;  
+      color: $default_light;
       margin-top: 20px;
     }
-    .icon{
+    .icon {
       display: flex;
       gap: 12px;
       align-items: center;
       margin-bottom: 16px;
 
-      span{
+      span {
         height: 40px;
         width: 40px;
         background: $black;
         border-radius: 50%;
       }
-      p{
+      p {
         font-size: 18px;
         color: $default_light;
       }
-      
     }
   }
 }
 
 .team-cards {
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   margin-bottom: 55px;
 
   .card {
@@ -664,7 +662,7 @@ section {
           text-align: left;
           padding: 36px 0;
           cursor: pointer;
-          border: none
+          border: none;
         }
       }
 
@@ -672,7 +670,7 @@ section {
         color: #5e7775;
         font-size: 17px;
         font-weight: 300;
-        margin: -23px 0 42px 0 ;
+        margin: -23px 0 42px 0;
         display: none;
       }
     }
@@ -689,4 +687,11 @@ section {
     font-size: 17px;
     margin-bottom: 28px;
   }
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-24 {
+  margin-bottom: 24px;
 }
