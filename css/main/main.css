@@ -597,7 +597,11 @@ section.spacing {
 }
 
 .pt-0 {
-  padding-top: 0;
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
 }
 
 .mt-0 {
@@ -958,6 +962,78 @@ textarea.form-control {
   height: 122px;
   padding-top: 16px;
   resize: none;
+}
+
+.cart-list {
+  gap: 46px;
+}
+.cart-list h3 {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.feed-wrapper {
+  display: flex;
+  gap: 38px;
+  align-items: flex-start;
+}
+.feed-wrapper .filter-section {
+  width: 290px;
+  background-color: #e6cf00;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.feed-wrapper .filter-section .accordions ul li {
+  padding: 0 30px;
+  border-color: #fee655;
+}
+.feed-wrapper .filter-section .accordions ul li:first-child {
+  border-top: none;
+}
+.feed-wrapper .filter-section .accordions ul li:last-child {
+  border-bottom: none;
+}
+.feed-wrapper .filter-section .accordions ul li button.accordion-btn {
+  font-size: 20px;
+  padding: 15px 0;
+}
+.feed-wrapper .filter-section .accordions ul li .accordion-content {
+  margin-top: 0;
+}
+.feed-wrapper .feed-product-list {
+  flex: 1;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.feed-wrapper .feed-product-list .item {
+  width: calc(33.33% - 17px);
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  cursor: pointer;
+  margin-bottom: 18px;
+  color: #2e4147;
+  font-size: 15px;
+  display: flex;
+  gap: 7px;
+}
+.checkbox span {
+  border: 2px solid #fff;
+  width: 14px;
+  height: 13px;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox input:checked + span {
+  background-color: #fff;
 }
 
 .footer-section {

@@ -1,0 +1,25 @@
+.checkbox {
+  cursor: pointer;
+  margin-bottom: 18px;
+  color: $default;
+  font-size: 15px;
+  display: flex;
+  gap: 7px;
+
+  span {
+    border: 2px solid $white;
+    width: 14px;
+    height: 13px;
+    border-radius: 2px;
+    margin-top: 4px;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked + span {
+      background-color: $white;
+    }
+  }
+}
