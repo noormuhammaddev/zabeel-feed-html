@@ -17,4 +17,33 @@
     height: 41px;
     font-size: 15px;
   }
+
+  img {
+    max-height: 19px;
+    width: auto !important;
+  }
+}
+
+.add-to-cart {
+  height: 44px;
+  padding-left: 19px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  background-image: url(../../images/cart-green.png);
+  background-repeat: no-repeat !important;
+  background-position: 103px 13px !important;
+  padding-right: 46px;
+
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background-color: $green;
+    background-image: url(../../images/cart-bag.png);
+    background-size: 16px;
+  }
 }

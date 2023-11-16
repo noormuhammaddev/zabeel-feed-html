@@ -2,7 +2,12 @@
   height: 150px;
   background-color: $sea_green;
   padding-right: 54px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0 0 27px rgba(0, 0, 0, 0.18);
+  z-index: 100;
 
   .header-content {
     display: flex;
@@ -74,6 +79,13 @@
             border-radius: 100%;
             overflow: hidden;
             background-color: $yellow;
+
+            &.uae {
+              background-image: url(../../images/uae.png);
+              background-position: -10px center;
+              background-repeat: no-repeat;
+              background-size: 70px;
+            }
 
             img {
               width: 100%;
