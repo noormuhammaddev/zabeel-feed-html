@@ -35,5 +35,13 @@ jQuery(document).ready(function(){
   })
   // media slider end
 
+  // accordion start
+  jQuery('.accordions ul li button').on('click', function(){
+    jQuery('.accordions ul li').find('.accordion-content').slideUp();
+    jQuery(this).siblings('.accordion-content').slideDown();
+  })
+
+  // accordion end
+
   
 })

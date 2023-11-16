@@ -103,6 +103,13 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.has-yellow-with-bg {
+  background: url(../../images/yellow-with-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .has-sea-green-bg {
   background: url(../../images/bg-sea-green.jpg);
   background-repeat: no-repeat;
@@ -110,6 +117,9 @@ ul {
 }
 .has-light-grey-bg {
   background: $light_grey;
+}
+.has-grey-bg {
+  background: $grey;
 }
 
 section {
@@ -318,5 +328,365 @@ section {
         }
       }
     }
+  }
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  a{
+    color: $default_light;
+    font-weight: 300;
+  }
+  
+  span{
+    color: $green;
+  }
+}
+
+.history-wrapper {
+  height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  border-radius: 25px;
+  color: $white;
+
+  .history-line {
+    max-width: 900px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid $white;
+    border-bottom-style: dashed;
+    height: 1px;
+    position: relative;
+
+    .history-block {
+      width: 250px;
+      position: absolute;
+      top: 0;
+
+      .dot {
+        width: 36px;
+        height: 36px;
+        background-color: $white;
+        border: 1px solid $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        position: relative;
+        margin-top: -17px;
+
+        &:after,
+        &:before {
+          content: "";
+          display: block;
+        }
+
+        &:before {
+          width: 22px;
+          height: 22px;
+          background-color: #ec008d;
+          border-radius: 100%;
+        }
+
+        &:after {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 15px 7.5px 0 7.5px;
+          border-color: #ec008d transparent transparent transparent;
+          position: absolute;
+          left: 10px;
+          bottom: calc(100% + 3px);
+          transform: rotate(-180deg);
+        }
+      }
+
+      h4 {
+        margin-left: -12px;
+      }
+
+      p {
+        margin-left: -12px;
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      &.history-1 {
+        left: 0;
+      }
+
+      &.history-2 {
+        left: 214px;
+
+        .dot {
+          &:before {
+            background-color: #5f7875;
+          }
+
+          &:after {
+            border-color: #5f7875 transparent transparent transparent;
+          }
+        }
+      }
+
+      &.history-3 {
+        left: 436px;
+
+        .dot {
+          &:before {
+            background-color: #00538d;
+          }
+
+          &:after {
+            border-color: #00538d transparent transparent transparent;
+          }
+        }
+      }
+
+      &.history-4 {
+        left: 659px;
+
+        .dot {
+          &:before {
+            background-color: #07794e;
+          }
+
+          &:after {
+            border-color: #07794e transparent transparent transparent;
+          }
+        }
+      }
+
+      &.history-5 {
+        left: 870px;
+
+        .dot {
+          &:before {
+            background-color: #d8ca7c;
+          }
+
+          &:after {
+            border-color: #d8ca7c transparent transparent transparent;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        h4 {
+          position: absolute;
+          bottom: 50px;
+        }
+        p {
+          position: absolute;
+          bottom: 82px;
+        }
+      }
+
+      &:nth-child(even) {
+        .dot:after {
+          transform: rotate(0);
+          bottom: -18px;
+        }
+        h4 {
+          margin-top: 13px;
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+
+.team-person{
+  display: flex;
+  gap: 70px;
+  margin-bottom: 95px;
+
+  .profile-image{
+    width: 502px;
+    height: 510px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .profile-detail{
+    flex: 1;
+    h3{
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .designation{
+      margin-bottom: 30px;
+      font-size: 22px;
+      color: $default_light;
+    }
+    > p{
+      font-size: 20px;
+      color: $default_light;
+      margin-top: 20px;
+    }
+    .icon{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+
+      span{
+        height: 40px;
+        width: 40px;
+        background: $black;
+        border-radius: 50%;
+      }
+      p{
+        font-size: 18px;
+        color: $default_light;
+      }
+      
+    }
+  }
+}
+
+.card{
+  border-radius: 25px;
+  padding: 37px 30px;
+
+  .image-holder{
+    width: 160px;
+    height: 157px;
+    background: red;
+    border-radius: 25px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+  
+  .card-detail{
+    flex: 1;
+    h3{
+      font-size: 36px;
+      margin: 26px 0 5px 0;
+    }
+    .designation{
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: $default_light;
+    }
+    > p{
+      font-size: 20px;
+      color: $default_light;  
+      margin-top: 20px;
+    }
+    .icon{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+
+      span{
+        height: 40px;
+        width: 40px;
+        background: $black;
+        border-radius: 50%;
+      }
+      p{
+        font-size: 18px;
+        color: $default_light;
+      }
+      
+    }
+  }
+}
+
+.team-cards {
+  flex-wrap: wrap ;
+  margin-bottom: 55px;
+
+  .card {
+    // flex: 1 0 calc(33.33% - 25px);
+    width: calc(33.33% - 25px);
+  }
+}
+
+.beliefs-wrapper {
+  gap: 70px;
+
+  .accordions {
+    flex: 1;
+  }
+
+  .media {
+    width: 502px;
+    height: 466px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: $grey;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+.accordions {
+  ul {
+    li {
+      border-bottom: 1px solid $grey;
+
+      &:first-child {
+        border-top: 1px solid $grey;
+      }
+
+      button {
+        &.accordion-btn {
+          font-size: 23px;
+          font-weight: 600;
+          color: #2e4246;
+          background: url(../../images/angle-down.png);
+          background-repeat: no-repeat;
+          background-position: center right;
+          display: block;
+          width: 100%;
+          text-align: left;
+          padding: 36px 0;
+          cursor: pointer;
+          border: none
+        }
+      }
+
+      .accordion-content {
+        color: #5e7775;
+        font-size: 17px;
+        font-weight: 300;
+        margin: -23px 0 42px 0 ;
+        display: none;
+      }
+    }
+  }
+}
+
+.career-ad {
+  padding: 67px 77px;
+  color: $white;
+  border-radius: 25px;
+  margin-top: 125px;
+
+  p {
+    font-size: 17px;
+    margin-bottom: 28px;
   }
 }
