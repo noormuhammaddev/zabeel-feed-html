@@ -138,12 +138,19 @@ section.spacing {
   font-weight: 500;
   margin: -6px 0 22px;
 }
+.section-heading.sm h2 {
+  font-size: 36px;
+}
 .section-heading.white h2 {
   color: #fff;
 }
 
 .text-white {
   color: #fff;
+}
+
+.default-light {
+  color: #5e7775;
 }
 
 .flex {
@@ -589,12 +596,75 @@ section.spacing {
   margin-bottom: 28px;
 }
 
+.pt-0 {
+  padding-top: 0;
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }
 
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.map-wrapper {
+  gap: 52px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.map-wrapper .map-holder {
+  height: 475px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #f7f7f5;
+}
+
+.address {
+  max-width: 277px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  color: #5e7775;
+}
+
+.contact-bar {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.contact-bar .icon {
+  width: 39px;
+  height: 39px;
+  background-color: #000000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-bar .label {
+  font-weight: 500;
+  color: #5e7775;
+  font-size: 17px;
+  flex: 1;
+}
+.contact-bar .label a {
+  color: #9dc41a;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 14px;
+}
+.social-media-icons .icon {
+  width: 39px;
+  height: 39px;
+  background-color: #000000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
