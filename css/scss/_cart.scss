@@ -58,3 +58,53 @@
     }
   }
 }
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  .gallery-item {
+    height: 286px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    width: calc(33.33% - 17px);
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    .content {
+      position: absolute;
+      left: 35px;
+      bottom: 20px;
+      z-index: 10;
+
+      .tag {
+        background-color: $yellow;
+        color: $white;
+        padding: 3px 18px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        border-radius: 15px;
+      }
+
+      h5 {
+        color: $white;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 10px;
+      }
+
+      p {
+        color: $sea_green;
+        font-size: 13px;
+      }
+    }
+  }
+}

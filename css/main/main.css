@@ -1013,6 +1013,50 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.gallery-list .gallery-item {
+  height: 286px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  width: calc(33.33% - 17px);
+  margin-bottom: 30px;
+}
+.gallery-list .gallery-item img {
+  width: 100%;
+  min-height: 100%;
+}
+.gallery-list .gallery-item .content {
+  position: absolute;
+  left: 35px;
+  bottom: 20px;
+  z-index: 10;
+}
+.gallery-list .gallery-item .content .tag {
+  background-color: #e6cf00;
+  color: #fff;
+  padding: 3px 18px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  border-radius: 15px;
+}
+.gallery-list .gallery-item .content h5 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+.gallery-list .gallery-item .content p {
+  color: #00bbb4;
+  font-size: 13px;
+}
+
 .checkbox {
   cursor: pointer;
   margin-bottom: 18px;
