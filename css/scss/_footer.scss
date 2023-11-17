@@ -1,0 +1,129 @@
+.footer-section {
+  background-color: $ligh_grey_2;
+  position: relative;
+  margin-top: -2px;
+  overflow: hidden;
+
+  .footer-detail {
+    background-color: $sea_green;
+    padding: 85px 0;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      width: 3000px;
+      background-color: $sea_green;
+    }
+
+    .logo {
+      margin-bottom: 60px;
+    }
+
+    .contact-info {
+      display: flex;
+      margin-bottom: 34px;
+
+      .icon {
+        width: 41px;
+        padding-top: 6px;
+      }
+
+      .label {
+        flex: 1;
+        font-size: 17px;
+        color: $white;
+
+        a {
+          color: $white;
+
+          &.underline {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+
+  .footer-menu-wrapper {
+    padding: 90px 0 0 113px;
+
+    .menu-col {
+      flex: 1;
+      h4 {
+        color: #2e4246;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 26px;
+      }
+
+      ul {
+        li {
+          display: block;
+
+          a {
+            font-size: 15px;
+            color: $default_light;
+            line-height: 15px;
+            margin-bottom: 24px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscription-wrapper {
+  width: 500px;
+  position: relative;
+  margin-top: 91px;
+
+  input {
+    width: 100%;
+    height: 60px;
+    background-color: $white;
+    padding-left: 24px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 174px;
+    font-size: 15px;
+  }
+
+  .button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    height: 53px;
+    border-radius: 7px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.grey {
+    input {
+      background-color: $light_grey;
+    }
+  }
+}
+
+.copy-rights {
+  padding: 28px 0;
+  font-size: 15px;
+  color: $default_light;
+}
