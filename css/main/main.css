@@ -1095,6 +1095,17 @@ textarea.form-control {
   font-weight: 600;
   margin-bottom: 25px;
 }
+.cart-list .cart-table {
+  flex: 1;
+}
+.cart-list .order-summary {
+  width: 250px;
+}
+.cart-list .order-summary .summary-box {
+  background: #f7f7f5;
+  padding: 20px;
+  border-radius: 15px;
+}
 
 .feed-wrapper {
   display: flex;
@@ -1178,6 +1189,106 @@ textarea.form-control {
 .gallery-list .gallery-item .content p {
   color: #00bbb4;
   font-size: 13px;
+}
+
+.counter-control {
+  width: 85px;
+  height: 45px;
+  background-color: #efeeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  gap: 5px;
+}
+.counter-control button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.counter-control input {
+  width: 25px;
+  height: 14px;
+  font-size: 15px;
+  color: #5e7775;
+  line-height: 15px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.cart-card {
+  border-radius: 15px;
+  background-color: #f7f7f5;
+  padding: 20px 20px 18px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+}
+.cart-card .product-img {
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efeeea;
+  border-radius: 15px;
+}
+.cart-card .product-img img {
+  height: 64px;
+}
+.cart-card .product-name-and-qty {
+  flex: 1;
+  padding: 0 24px;
+}
+.cart-card .product-name-and-qty h4 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.cart-card .price {
+  width: 127px;
+}
+.cart-card .price h6 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #5e7775;
+}
+.cart-card .price p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart-card .sub-total {
+  width: 110px;
+  text-align: right;
+}
+.cart-card .sub-total h6 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #5e7775;
+}
+.cart-card .sub-total p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9dc41a;
+}
+.cart-card .sub-total button {
+  font-size: 13px;
+  background: none;
+  outline: none;
+  border: none;
+  margin-top: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 31px;
+  color: #5e7775;
 }
 
 .checkbox {
