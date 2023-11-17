@@ -18,9 +18,62 @@
     font-size: 15px;
   }
 
-  img {
-    max-height: 19px;
-    width: auto !important;
+  .icon {
+    width: 16px;
+    height: 16px;
+    background: url(../../images/arrow-up.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $default;
+  }
+
+  &.green-outlined {
+    background-color: $white;
+    border: 1px solid $green;
+    color: $green;
+
+    .icon {
+      background: url(../../images/arrow-up-green.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+
+      .icon {
+        background: url(../../images/arrow-up.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &.grey-outlined {
+    background-color: $white;
+    border: 1px solid $default_light;
+    color: $default_light;
+
+    .icon {
+      background: url(../../images/arrow-up-grey.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: $default_light;
+      color: $white;
+
+      .icon {
+        background: url(../../images/arrow-up.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
   }
 }
 
