@@ -690,3 +690,51 @@ section {
     margin-bottom: 28px;
   }
 }
+
+.feature-text{
+  h2{
+    font-size: 48px;
+  }
+  p{
+    font-size: 20px;
+    margin-bottom: 26px;
+    color: $default_light;
+  }
+  ul{
+    li{
+      font-size: 18px;
+      color: $default_light;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.price-sec{
+  gap: 12px;
+  margin-bottom: 38px;
+
+  h4{
+    color: $green;
+    font-size: 27px;
+  }
+  h5{
+    font-size: 13px;
+    color: $default_light;
+  }
+}
+
+.accordians-media{
+  gap: 15px;
+  div{
+    width: 88px;
+    height: 77px;
+    background: #efeeea;
+    border-radius: 15px;
+    overflow: hidden;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
