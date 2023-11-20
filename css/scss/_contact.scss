@@ -48,3 +48,32 @@ textarea.form-control {
   padding-top: 16px;
   resize: none;
 }
+
+.member-area {
+  max-width: 566px;
+  margin: 0 auto;
+
+  .member-form-wrapper {
+    h6 {
+      font-size: 19px;
+      font-weight: 500;
+      margin-bottom: 33px;
+    }
+
+    .form-control {
+      margin-bottom: 38px;
+    }
+  }
+  .or {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: $default_light;
+    margin: 60px auto;
+    background-color: $light_grey;
+    border-radius: 100%;
+  }
+}

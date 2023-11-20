@@ -22,4 +22,18 @@
       background-color: $white;
     }
   }
+
+  &.dark {
+    span {
+      background-color: #f7f7f5;
+      border: 1px solid #d8dddb;
+    }
+
+    input {
+      &:checked + span {
+        background-color: $green;
+        border-color: $green;
+      }
+    }
+  }
 }

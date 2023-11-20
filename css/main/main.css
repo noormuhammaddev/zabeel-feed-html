@@ -596,6 +596,48 @@ section.spacing {
   margin-bottom: 28px;
 }
 
+.feature-text h2 {
+  font-size: 48px;
+}
+.feature-text p {
+  font-size: 20px;
+  margin-bottom: 26px;
+  color: #5e7775;
+}
+.feature-text ul li {
+  font-size: 18px;
+  color: #5e7775;
+  margin-bottom: 23px;
+}
+
+.price-sec {
+  gap: 12px;
+  margin-bottom: 38px;
+}
+.price-sec h4 {
+  color: #9dc41a;
+  font-size: 27px;
+}
+.price-sec h5 {
+  font-size: 13px;
+  color: #5e7775;
+}
+
+.accordians-media {
+  gap: 15px;
+}
+.accordians-media div {
+  width: 88px;
+  height: 77px;
+  background: #efeeea;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.accordians-media div img {
+  height: 100%;
+  width: 100%;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -610,6 +652,18 @@ section.spacing {
 
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .map-wrapper {
@@ -772,9 +826,53 @@ section.spacing {
   height: 41px;
   font-size: 15px;
 }
-.button img {
-  max-height: 19px;
-  width: auto !important;
+.button .icon {
+  width: 16px;
+  height: 16px;
+  background: url(../../images/arrow-up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button:hover {
+  background-color: #2e4147;
+}
+.button.green-outlined {
+  background-color: #fff;
+  border: 1px solid #9dc41a;
+  color: #9dc41a;
+}
+.button.green-outlined .icon {
+  background: url(../../images/arrow-up-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button.green-outlined:hover {
+  background-color: #9dc41a;
+  color: #fff;
+}
+.button.green-outlined:hover .icon {
+  background: url(../../images/arrow-up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button.grey-outlined {
+  background-color: #fff;
+  border: 1px solid #5e7775;
+  color: #5e7775;
+}
+.button.grey-outlined .icon {
+  background: url(../../images/arrow-up-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button.grey-outlined:hover {
+  background-color: #5e7775;
+  color: #fff;
+}
+.button.grey-outlined:hover .icon {
+  background: url(../../images/arrow-up.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .add-to-cart {
@@ -964,6 +1062,31 @@ textarea.form-control {
   resize: none;
 }
 
+.member-area {
+  max-width: 566px;
+  margin: 0 auto;
+}
+.member-area .member-form-wrapper h6 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 33px;
+}
+.member-area .member-form-wrapper .form-control {
+  margin-bottom: 38px;
+}
+.member-area .or {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  color: #5e7775;
+  margin: 60px auto;
+  background-color: #f7f7f5;
+  border-radius: 100%;
+}
+
 .cart-list {
   gap: 46px;
 }
@@ -971,6 +1094,17 @@ textarea.form-control {
   font-size: 27px;
   font-weight: 600;
   margin-bottom: 25px;
+}
+.cart-list .cart-table {
+  flex: 1;
+}
+.cart-list .order-summary {
+  width: 250px;
+}
+.cart-list .order-summary .summary-box {
+  background: #f7f7f5;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .feed-wrapper {
@@ -1057,6 +1191,106 @@ textarea.form-control {
   font-size: 13px;
 }
 
+.counter-control {
+  width: 85px;
+  height: 45px;
+  background-color: #efeeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  gap: 5px;
+}
+.counter-control button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.counter-control input {
+  width: 25px;
+  height: 14px;
+  font-size: 15px;
+  color: #5e7775;
+  line-height: 15px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.cart-card {
+  border-radius: 15px;
+  background-color: #f7f7f5;
+  padding: 20px 20px 18px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+}
+.cart-card .product-img {
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efeeea;
+  border-radius: 15px;
+}
+.cart-card .product-img img {
+  height: 64px;
+}
+.cart-card .product-name-and-qty {
+  flex: 1;
+  padding: 0 24px;
+}
+.cart-card .product-name-and-qty h4 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.cart-card .price {
+  width: 127px;
+}
+.cart-card .price h6 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #5e7775;
+}
+.cart-card .price p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart-card .sub-total {
+  width: 110px;
+  text-align: right;
+}
+.cart-card .sub-total h6 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #5e7775;
+}
+.cart-card .sub-total p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9dc41a;
+}
+.cart-card .sub-total button {
+  font-size: 13px;
+  background: none;
+  outline: none;
+  border: none;
+  margin-top: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 31px;
+  color: #5e7775;
+}
+
 .checkbox {
   cursor: pointer;
   margin-bottom: 18px;
@@ -1078,6 +1312,14 @@ textarea.form-control {
 }
 .checkbox input:checked + span {
   background-color: #fff;
+}
+.checkbox.dark span {
+  background-color: #f7f7f5;
+  border: 1px solid #d8dddb;
+}
+.checkbox.dark input:checked + span {
+  background-color: #9dc41a;
+  border-color: #9dc41a;
 }
 
 .footer-section {

@@ -698,17 +698,17 @@ section {
   }
 }
 
-.feature-text{
-  h2{
+.feature-text {
+  h2 {
     font-size: 48px;
   }
-  p{
+  p {
     font-size: 20px;
     margin-bottom: 26px;
     color: $default_light;
   }
-  ul{
-    li{
+  ul {
+    li {
       font-size: 18px;
       color: $default_light;
       margin-bottom: 23px;
@@ -716,30 +716,30 @@ section {
   }
 }
 
-.price-sec{
+.price-sec {
   gap: 12px;
   margin-bottom: 38px;
 
-  h4{
+  h4 {
     color: $green;
     font-size: 27px;
   }
-  h5{
+  h5 {
     font-size: 13px;
     color: $default_light;
   }
 }
 
-.accordians-media{
+.accordians-media {
   gap: 15px;
-  div{
+  div {
     width: 88px;
     height: 77px;
     background: #efeeea;
     border-radius: 15px;
     overflow: hidden;
 
-    img{
+    img {
       height: 100%;
       width: 100%;
     }
@@ -756,6 +756,18 @@ section {
 }
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .map-wrapper {
